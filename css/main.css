@@ -1,0 +1,596 @@
+@import 'fonts.css';
+
+:root {
+  --body: #fff;
+  --text: #323232;
+  --title: #7177F1;
+  --btn: #7177F1;
+  --link: #7177F1;
+  --dots-active: #7177F1;
+  --dots: #828282;
+  --font-primary: 'Montserrat';
+  --font-secondary: 'Trebuchet';
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var( --title);
+  border-radius: 30px;
+}
+
+body {
+  /* background: var(--body); */
+  font-family: var(--font-primary);
+  color: var(--text);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* .logo::before {
+  content: url(../img/svg/logo-light.svg);
+} */
+
+.title {
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+/* or 31px */
+
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+/* основной */
+
+color: #474A51;
+margin-bottom: 80px;  
+}
+
+/* header start */
+
+.header__list {
+  column-gap: 30px;
+  row-gap: 10px;
+}
+
+.header__link {
+  font-family: 'PTSerif-Regular ';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+/* or 18px */
+
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+/* основной */
+
+color: #474A51;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.header__link:hover {
+  color: var(--text);
+}
+
+.header__link-btn {
+  width: 190px;
+}
+
+.header__menu {
+  width: 50px;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  position: relative;
+}
+
+.header__menu:focus {
+  box-shadow: unset;
+}
+
+.header__menu::before,
+.header__menu::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 100%;
+  background: var(--text);
+  left: 0;
+  transition: 500ms;
+}
+
+.header__menu::after {
+  top: 10px;
+}
+
+.header__menu.collapsed {
+  background: var(--text);
+  transition: 500ms;
+}
+
+.header__menu:not(.collapsed)::before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.header__menu:not(.collapsed)::after {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+/* header end */
+
+/* slider start */
+
+.carousel-title {
+  font-family: 'Lovelace';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+line-height: 130%;
+/* identical to box height, or 68px */
+
+text-align: center;
+text-transform: uppercase;
+
+/* основной 2 */
+
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+
+.carousel-btn {
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+/* основной */
+
+color: #474A51;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+background: #DDE8F6;
+padding: 15px 15px;
+}
+
+/* slider end */
+
+/* capabilities start */
+
+.cap {
+  padding: 175px 0;
+}
+
+.capabilities__title {
+  margin-bottom: 30px;
+}
+
+/* capabilities end */
+
+/* foother start */
+
+.foother{
+  padding-bottom: 130px;
+}
+
+
+.custom__price {
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+
+text-align: center;
+
+/* основной */
+
+color: #474A51;
+
+}
+
+.lookbook__text {
+  font-family: 'Lovelace';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+line-height: 130%;
+/* identical to box height, or 68px */
+
+text-transform: uppercase;
+
+/* основной */
+
+color: #474A51;
+padding: 190px 0;
+}
+
+.lookbook__title {
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+/* or 21px */
+
+
+/* основной */
+
+color: #474A51;
+max-width: 407px;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.lookbook__span {
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+
+
+/* основной */
+
+color: #474A51;
+
+}
+
+.footer {
+  background: #EEEEEE;
+  padding: 120px 0;
+}
+
+.social__link {
+  font-family: 'PTSerif-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  /* or 18px */
+  
+  
+  /* основной */
+  
+  color: #474A51;
+  
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+   margin-bottom: 5px;
+}
+
+.btn__dowland {
+  font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+/* or 18px */
+
+letter-spacing: 0.02em;
+text-transform: uppercase;
+
+/* основной */
+
+color: #474A51;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+/* .lookbook__bg {
+  background: #EEEEEE;
+} */
+
+.custom {
+  padding: 160px 0;
+}
+
+/* custom start */
+  /* .custom {
+    padding: 50px 0;
+  } */
+  
+  .custom__images {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .custom__txt {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #474A51;
+  }
+
+  .custom__cart {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .fa-heart:before,
+  .fa-shopping-cart:before,
+  .fa-eye:before {
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  
+  .custom__hearth:hover .fa-heart:before,
+  .custom__add:hover .fa-shopping-cart:before,
+  .custom__eye:hover .fa-eye:before {
+    color: var(--green);
+    font-weight: 700;
+  }
+  
+  .custom__cart:hover .custom__icons {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  
+  .custom__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 10px;
+    font-family: 'PTSerif-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    /* or 18px */
+    
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: #EB5757;
+  }
+  
+  .custom__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 15px;
+    background: var(--black_70);
+    color: var(--white);
+    font-family: var(--fR400);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .custom__icons * {
+    cursor: pointer;
+    font-family: 'Futura PT';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+/* identical to box height, or 21px */
+
+text-align: center;
+
+/* основной */
+
+color: #474A51;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+  }
+  
+  .custom__add span {
+    margin-right: 16px;
+  }
+  
+  /* custom end */
+
+  .footer__social {
+    padding: 36px 0;
+  }
+
+  .social__list {
+    list-style: none;
+  }
+
+  .footer__social {
+    padding: 36px 0;
+  }
+  
+  .social__title {
+    font-size: 24px;
+    color: var(--white);
+    margin-bottom: 40px;
+  }
+
+  .social__link {
+    color: var(--white);
+    font-family: var(--fR400);
+    font-size: 14px;
+    line-height: 36px;
+    text-transform: capitalize;
+  }
+
+  .social__link:hover {
+    color: var(--green);
+  }
+
+  .social__link-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: var(--white);
+    font-family: var(--fR400);
+    font-size: 14px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  
+  .social__link-icon:hover {
+    color: var(--green);
+  }
+
+  .custom__price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #474A51;
+    font-family: 'Futura PT';
+  }
+
+  .jacket {
+    padding: 30px 0;
+  }
+
+  .pants {
+    padding: 160px 0;
+  }
+
+  .skirt {
+    padding: 80px 0;
+  }
+
+  .hat {
+    padding: 160px 0;
+  }
+
+  .lookbook__text__brend {
+    font-family: 'Lovelace';
+font-style: normal;
+font-weight: 400;
+font-size: 52px;
+/* or 68px */
+
+text-transform: uppercase;
+
+/* основной */
+
+color: #474A51;
+max-width: 407px;
+width: 100%;
+margin-bottom: 20px;
+padding: 20px 0;
+  }
+
+  .lookbook__span__brend {
+    font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  /* or 21px */
+  
+  
+  /* основной */
+  
+  color: #474A51;
+  max-width: 407px;
+width: 100%;
+margin-bottom: 20px;
+  }
+
+  .lookbook__title__brend {
+    font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  /* or 21px */
+  
+  
+  /* основной */
+  
+  color: #474A51;
+  max-width: 407px;
+width: 100%;
+margin-bottom: 20px;
+  }
+
+  .lookbook__text__title__brend {
+    font-family: 'Futura PT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  /* or 21px */
+  
+  
+  /* основной */
+  
+  color: #474A51;
+  max-width: 407px;
+width: 100%;
+  }
+
